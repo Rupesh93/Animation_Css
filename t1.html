@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+       body{
+           background:black;
+       }
+        .container{
+            border:2px solid white;
+            width:600px;
+            height: 500px;
+            padding: 5px;
+        }
+        .d1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            box-shadow: 10px 20px 50px rgb(190, 187, 187);
+            animation: animate 6s infinite linear;
+        }
+        @keyframes animate{
+            0%{}
+            25%{
+                background-color:green;
+                margin-left:495px;
+                margin-top: 0px;
+                border-radius: 20px;
+            }
+            50%{
+                background-color: hotpink;
+                margin-top: 395px;
+                margin-left: 495px;
+                border-radius: 38px;
+            }
+            75%{
+                background-color: lightblue;
+                margin-top: 395px;
+                margin-left: 0px;
+                border-radius: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container">
+             <div class="d1"></div>
+    </div>
+</body>
+</html>
